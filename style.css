@@ -1,6 +1,9 @@
 body,h1,h2,h3,h4,h5,h6{
     font-family: 'Work Sans',sans-serif;
 }
+img{
+    max-width: 100%;
+}
 
 /* Header Style */
 .my-header .navbar-brand{
@@ -56,4 +59,61 @@ body,h1,h2,h3,h4,h5,h6{
 } 
 .slider-caption .form-control{
     padding: 18px 20px;
+}
+
+/* About Section */
+.about-section{
+    background: #f7f9ff;
+}
+.about-text-left{
+    margin-top: 120px;
+}
+.about-text-left .lead{
+    font-size: 25px;
+    line-height: 1.7em;
+}
+
+/* frature Section CSS */
+.feature-item{
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+.left-img-sec{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.left-text-sec{
+    width: 60%;
+    padding: 25px;
+}
+.left-img-sec img{
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -80px; 
+}
+
+/*  Portolio Hover Css  */
+.portfolio-item{}
+.portfolio-item a{
+    position: relative;
+    display: block;
+}
+.portfolio-item a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(98, 120, 223,.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.portfolio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
 }
