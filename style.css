@@ -194,3 +194,15 @@ img{
     box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
     padding: 40px;
 }
+
+.img-block img{
+    width: 800px;
+}
+.app-download .btn{
+    background: #5ba533;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 600;
+    width: 50%;
+    align-items: center;
+} 
